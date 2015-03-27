@@ -13,6 +13,11 @@
 		B6CA01551AC55EB3000859A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6CA01541AC55EB3000859A1 /* Images.xcassets */; };
 		B6CA01581AC55EB3000859A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6CA01561AC55EB3000859A1 /* LaunchScreen.xib */; };
 		B6CA01641AC55EB3000859A1 /* socketDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CA01631AC55EB3000859A1 /* socketDemoTests.swift */; };
+		B6CA01981AC55FC7000859A1 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CA01971AC55FC7000859A1 /* libicucore.dylib */; };
+		B6CA019A1AC55FD6000859A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CA01991AC55FD6000859A1 /* CFNetwork.framework */; };
+		B6CA019C1AC56003000859A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CA019B1AC56003000859A1 /* Security.framework */; };
+		B6CA019E1AC5600C000859A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CA019D1AC5600C000859A1 /* Foundation.framework */; };
+		B6CA01A71AC56513000859A1 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA01A61AC56513000859A1 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,14 @@
 		B6CA015D1AC55EB3000859A1 /* socketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CA01621AC55EB3000859A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6CA01631AC55EB3000859A1 /* socketDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socketDemoTests.swift; sourceTree = "<group>"; };
+		B6CA01971AC55FC7000859A1 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B6CA01991AC55FD6000859A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B6CA019B1AC56003000859A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B6CA019D1AC5600C000859A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6CA01A41AC56513000859A1 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		B6CA01A51AC56513000859A1 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		B6CA01A61AC56513000859A1 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		B6CA01A81AC56572000859A1 /* socketDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "socketDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CA019E1AC5600C000859A1 /* Foundation.framework in Frameworks */,
+				B6CA019C1AC56003000859A1 /* Security.framework in Frameworks */,
+				B6CA019A1AC55FD6000859A1 /* CFNetwork.framework in Frameworks */,
+				B6CA01981AC55FC7000859A1 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +76,10 @@
 		B6CA013F1AC55EB3000859A1 = {
 			isa = PBXGroup;
 			children = (
+				B6CA019D1AC5600C000859A1 /* Foundation.framework */,
+				B6CA019B1AC56003000859A1 /* Security.framework */,
+				B6CA01991AC55FD6000859A1 /* CFNetwork.framework */,
+				B6CA01971AC55FC7000859A1 /* libicucore.dylib */,
 				B6CA014A1AC55EB3000859A1 /* socketDemo */,
 				B6CA01601AC55EB3000859A1 /* socketDemoTests */,
 				B6CA01491AC55EB3000859A1 /* Products */,
@@ -82,7 +103,9 @@
 				B6CA01511AC55EB3000859A1 /* Main.storyboard */,
 				B6CA01541AC55EB3000859A1 /* Images.xcassets */,
 				B6CA01561AC55EB3000859A1 /* LaunchScreen.xib */,
+				B6CA01A31AC56513000859A1 /* SocketRocket */,
 				B6CA014B1AC55EB3000859A1 /* Supporting Files */,
+				B6CA01A81AC56572000859A1 /* socketDemo-Bridging-Header.h */,
 			);
 			path = socketDemo;
 			sourceTree = "<group>";
@@ -110,6 +133,16 @@
 				B6CA01621AC55EB3000859A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6CA01A31AC56513000859A1 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				B6CA01A41AC56513000859A1 /* SocketRocket-Prefix.pch */,
+				B6CA01A51AC56513000859A1 /* SRWebSocket.h */,
+				B6CA01A61AC56513000859A1 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CA01A71AC56513000859A1 /* SRWebSocket.m in Sources */,
 				B6CA01501AC55EB3000859A1 /* ViewController.swift in Sources */,
 				B6CA014E1AC55EB3000859A1 /* AppDelegate.swift in Sources */,
 			);
@@ -336,9 +370,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Developer/My,
+					Data/Ashish,
+					"Workspace/SDKs/SocketRocket-master/build/Debug",
+				);
 				INFOPLIST_FILE = socketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Developer/My,
+					Data/Ashish,
+					"Workspace/SDKs/SocketRocket-master/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketDemo/socketDemo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -346,9 +393,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Developer/My,
+					Data/Ashish,
+					"Workspace/SDKs/SocketRocket-master/build/Debug",
+				);
 				INFOPLIST_FILE = socketDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Developer/My,
+					Data/Ashish,
+					"Workspace/SDKs/SocketRocket-master/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketDemo/socketDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
